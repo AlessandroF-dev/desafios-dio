@@ -1,5 +1,7 @@
 package banco_digital;
 
+import java.util.Date;
+
 public class ContaCorrente extends Conta {
 
 	public ContaCorrente(Cliente cliente) {
@@ -8,7 +10,7 @@ public class ContaCorrente extends Conta {
 
 	@Override
 	public void imprimirExtrato() {
-		System.out.println("=== Extrato Conta Corrente ===");
+		System.out.println(dateFormat.format(new Date()) + " === Extrato Conta Corrente ===");
 		super.imprimirInfosComuns();
 	}
 	

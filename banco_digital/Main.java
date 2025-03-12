@@ -6,13 +6,15 @@ public class Main {
 		Cliente venilton = new Cliente();
 		venilton.setNome("Venilton");
 		
-		Conta cc = new ContaCorrente(venilton);
+		Conta corrente = new ContaCorrente(venilton);
 		Conta poupanca = new ContaPoupanca(venilton);
 
-		cc.depositar(100);
-		cc.transferir(100, poupanca);
-		
-		cc.imprimirExtrato();
+		corrente.depositar(100);
+		corrente.transferir(100, poupanca);
+
+		poupanca.transferir(150, corrente);
+
+		corrente.imprimirExtrato();
 		poupanca.imprimirExtrato();
 	}
 
