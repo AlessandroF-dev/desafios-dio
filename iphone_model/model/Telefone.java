@@ -44,8 +44,8 @@ public class Telefone {
         reprodutorMusical.selecionarMusica(musica);
     }
 
-    public String exibirPagina(String url) {
-        return navegadorInternet.exibirPagina(url);
+    public void exibirPagina(String url) {
+        navegadorInternet.exibirPagina(url);
     }
 
     public void adicionarNovaAba() {

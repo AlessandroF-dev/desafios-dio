@@ -3,9 +3,8 @@ package iphone_model.service;
 public class NavegadorInternetImpl implements INavegadorInternet{
 
     @Override
-    public String exibirPagina(String url) {
+    public void exibirPagina(String url) {
         System.out.println("Exibindo pagina: " + url);
-        return url;
     }
 
     @Override

@@ -2,7 +2,7 @@ package iphone_model.service;
 
 public interface INavegadorInternet {
 
-    String exibirPagina(String url);
+    void exibirPagina(String url);
 
     void adicionarNovaAba();
 
