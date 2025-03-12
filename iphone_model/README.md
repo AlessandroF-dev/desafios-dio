@@ -37,10 +37,18 @@ classDiagram
         +atualizarPagina()
     }
 
-    class iPhone {
+    class Telefone{
+        UUID id;
+        String modelo;
+        String numero;
     }
 
-    iPhone --> ReprodutorMusical
-    iPhone --> AparelhoTelefonico
-    iPhone --> NavegadorInternet
+    class IPhone {
+        String versao
+    }
+
+    Telefone --> IPhone
+    IPhone --> ReprodutorMusical
+    IPhone --> AparelhoTelefonico
+    IPhone --> NavegadorInternet
 ```
